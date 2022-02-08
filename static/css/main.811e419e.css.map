@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.811e419e.css","mappings":"AAAA,YAAI,CACJ,wBAAI,CACJ,kBAAkB","sources":["index.scss"],"sourcesContent":["@use \"./App\";\n@use \"./scss/components\";\n@use \"./scss/pages\";\n\n// // mode production\n// @import \"./App\";\n// @import \"./scss/components\";\n// @import \"./scss/pages\";\n"],"names":[],"sourceRoot":""}
