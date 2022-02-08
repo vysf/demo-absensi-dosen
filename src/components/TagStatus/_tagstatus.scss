@@ -1,0 +1,59 @@
+@use "../../scss/breakpoint";
+
+// // mode production
+// @import "../../scss/breakpoint";
+
+.tag-danger,
+.tag-succes,
+.tag-warning {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: fit-content;
+  // width: 191px;
+  width: 100%;
+}
+
+.status-danger,
+.status-succes,
+.status-warning {
+  padding: 6px 8px 6px 8px;
+  // font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+  @include breakpoint.mobile-potrait {
+    font-size: 12px;
+
+    padding: 6px 6px 6px 6px;
+  }
+}
+
+.tag-danger {
+  background: #ffdcdc;
+  border: 1px solid #ff0207;
+
+  .status-danger {
+    color: #ff0207;
+  }
+}
+
+.tag-succes {
+  background: #beffe0;
+  border: 1px solid #00c306;
+
+  .status-succes {
+    color: #00c306;
+  }
+}
+
+.tag-warning {
+  background: #ffedb9;
+  border: 1px solid #ffc000;
+
+  .status-warning {
+    color: #ffc000;
+  }
+}

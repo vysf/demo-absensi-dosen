@@ -1,0 +1,105 @@
+@use "../../../scss/breakpoint";
+
+// // mode production
+// @import "../../../scss/breakpoint";
+
+.container_dashboard {
+  padding: 10px 20px;
+  //   background-color: aqua;
+  //   overflow-x: scroll;
+
+  h2 {
+    color: #363636;
+  }
+
+  .cari_tambah_info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-content: center;
+
+    @include breakpoint.mobile-potrait {
+      display: block;
+      position: relative;
+    }
+
+    .test_input {
+      width: 40%;
+
+      @include breakpoint.mobile-potrait {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  //   white-space: nowrap;
+
+  .container_table {
+    //   width: 800px;
+    overflow-x: scroll;
+    // white-space: nowrap;
+  }
+
+  // tombol untuk tambah dosen
+  .tambah_dosen {
+    // margin-left: 10%;
+    background-color: #beffe0;
+    color: #00c306;
+    padding: 4px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    @include breakpoint.small-screen {
+      padding: 4px 6px;
+    }
+
+    @include breakpoint.mobile-potrait {
+      width: fit-content;
+    }
+
+    &:hover {
+      background-color: #c9fce3;
+    }
+
+    .bxs-plus-square {
+      font-size: 35px;
+      margin-right: 5px;
+
+      @include breakpoint.small-screen {
+        font-size: 25px;
+      }
+    }
+
+    .tambah_dosen_caption {
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-block;
+      width: max-content;
+      padding-right: 8px;
+
+      @include breakpoint.small-screen {
+        font-size: 12px;
+      }
+    }
+  }
+  .info_jumlah_dosen {
+    // margin-left: 20%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+
+    @include breakpoint.small-screen {
+      font-size: 12px;
+    }
+
+    @include breakpoint.mobile-potrait {
+      position: absolute;
+      right: 0;
+      bottom: 9px;
+    }
+  }
+}

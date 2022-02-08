@@ -1,0 +1,92 @@
+@use "../../scss/breakpoint";
+
+// // mode production
+// @import "../../scss/breakpoint";
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+
+  // @include mobile-potrait {
+  //   background-color: rgb(163, 9, 9);
+  // }
+
+  .thead {
+    //   background: red;
+    color: #212121;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.1);
+    // text-align: center;
+    background-color: #ffffff;
+
+    .th {
+      padding: 20px 10px 20px 10px;
+      color: #212121;
+      text-align: center;
+      // border: 1px solid #d1d1d1; //sementara hapus dulu
+      border-right: hidden;
+      border-left: hidden;
+    }
+
+    // .th:first-child,
+    // .th:last-child {
+    // border: 1px solid #d1d1d1; //sementara hapus dulu
+    // }
+
+    .th:first-child {
+      border-right: hidden;
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    .th:last-child {
+      border-left: hidden;
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
+
+  .tbody {
+    text-align: center;
+    background-color: #ffffff;
+
+    .tr {
+      // height: 64px;
+      color: #212121;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.1);
+
+      @include breakpoint.mobile-potrait {
+        font-size: 12px;
+      }
+
+      .td {
+        // border: 1px solid #d1d1d1;
+        border-right: hidden;
+        border-left: hidden;
+        padding: 20px 10px 20px 10px;
+      }
+
+      // .td:first-child,
+      // .td:last-child {
+      // border: 1px solid #d1d1d1; //sementara hapus dulu
+      // }
+
+      .td:first-child {
+        border-right: hidden;
+        border-radius: 4px 0px 0px 4px;
+      }
+
+      .td:last-child {
+        border-left: hidden;
+        border-radius: 0px 4px 4px 0px;
+        display: flex;
+        align-items: center;
+        height: inherit;
+        justify-content: center;
+      }
+    }
+  }
+}

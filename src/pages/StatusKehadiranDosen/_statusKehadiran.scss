@@ -1,0 +1,80 @@
+@use "../../scss/breakpoint";
+
+// // mode production
+// @import "../../scss/breakpoint";
+
+.kehadiran-container {
+  width: 100%;
+  padding: 0px 40px;
+  margin-top: 40px;
+
+  @include breakpoint.small-screen {
+    padding: 0px 20px;
+  }
+  @include breakpoint.tablet-screen {
+    padding: 0px;
+  }
+
+  .tabel_kehadiran {
+    @include breakpoint.small-screen {
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+  }
+  .link-info-banner {
+    // background-color: blue;
+    width: 100%;
+    height: 287px;
+
+    background: #ffffff;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 69px 0px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+    @include breakpoint.small-screen {
+      margin: 50px 0px;
+      grid-template-columns: auto auto;
+    }
+
+    @include breakpoint.tablet-screen {
+      margin: 35px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      // padding: 10px 0;
+      height: 450px;
+    }
+
+    .links-info {
+      //   background-color: rgba(255, 255, 255, 0.8);
+      //   border: 1px solid rgba(0, 0, 0, 0.8);
+      text-align: center;
+      align-self: center;
+
+      .label-link {
+        font-weight: 600;
+        font-size: 18px;
+        color: #313131;
+
+        @include breakpoint.small-screen {
+          font-size: 14px;
+        }
+      }
+
+      .link {
+        color: #2196f3;
+        font-weight: 500;
+        font-size: 18px;
+
+        @include breakpoint.small-screen {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

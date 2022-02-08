@@ -1,0 +1,52 @@
+// mobile: 320px-480px
+// ipads & tablet: 481px-768px
+// small screen: 769px-1024px
+// large screen: 1025px-1200px
+// extra large screen: >1202px
+
+$mobile-min: 320px;
+$tablet-min: 480px;
+$sm-screen: 768px;
+$l-screen: 1024px;
+$xl-screen: 1200px;
+
+// nanti ubah min-width -> min-device-width
+// untuk mobile dan tablet
+
+// mobile phone potrait
+
+@mixin extra-small {
+  @media screen and (max-width: $mobile-min) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin mobile-potrait {
+  @media screen and (max-width: $tablet-min) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin mobile-landscape {
+  @media screen and (max-width: $l-screen) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin tablet-screen {
+  @media screen and (max-width: $sm-screen) {
+    @content;
+  }
+}
+
+@mixin small-screen {
+  @media screen and (max-width: $l-screen) {
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @media screen and (max-width: $xl-screen) {
+    @content;
+  }
+}

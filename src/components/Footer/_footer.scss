@@ -1,0 +1,36 @@
+@use "../../scss/breakpoint";
+
+// // production mode
+// @import "../../scss/breakpoint";
+
+.copyright {
+  /* position: absolute;
+    bottom: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem 0; /*10px 0*/
+  width: 100%;
+  // background-color: #f5f5f5;
+  // background-color: #801010;
+
+  h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    text-align: center;
+    color: #666666;
+
+    @include breakpoint.small-screen {
+      font-size: 12px;
+    }
+
+    @include breakpoint.mobile-potrait {
+      font-size: 8px;
+    }
+  }
+}

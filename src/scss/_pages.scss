@@ -1,0 +1,20 @@
+@use "../pages/MainApp/mainApp";
+@use "../pages/Dosen/dosen";
+@use "../pages/Login/login";
+@use "../pages/StatusKehadiranDosen/statusKehadiran";
+
+// admin pages
+@use "../pages/AdminPages/Admin/admin";
+@use "../pages/AdminPages/Dashboard/dashboard";
+@use "../pages/AdminPages/Setting/setting";
+
+// // mode production
+// @import "../pages/MainApp/mainApp";
+// @import "../pages/Dosen/dosen";
+// @import "../pages/Login/login";
+// @import "../pages/StatusKehadiranDosen/statusKehadiran";
+
+// // admin pages
+// @import "../pages/AdminPages/Admin/admin";
+// @import "../pages/AdminPages/Dashboard/dashboard";
+// @import "../pages/AdminPages/Setting/setting";

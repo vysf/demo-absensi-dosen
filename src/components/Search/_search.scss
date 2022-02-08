@@ -1,0 +1,48 @@
+.input_seacrh {
+  display: flex;
+  //   align-content: center;
+  //   align-items: center;
+  flex-direction: column;
+  position: relative;
+  i {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .search {
+    // background-color: black;
+
+    background: #f6f8fc;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0.625rem 0.625rem;
+    // font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    padding-left: 32px;
+  }
+
+  .label-warning {
+    color: #ff0207;
+  }
+
+  .input-warning {
+    border: 1px solid #ff0207;
+    box-sizing: border-box;
+  }
+
+  .error-msg {
+    color: #ff0207;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    margin-top: 4px;
+  }
+}

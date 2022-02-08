@@ -1,0 +1,20 @@
+@use "../../scss/breakpoint";
+
+// // mode production
+// @import "../../scss/breakpoint";
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  //   background-color: rgb(106, 150, 150);
+  padding: 0 1rem;
+
+  @include breakpoint.mobile-potrait {
+    padding: 0 1rem;
+  }
+
+  @include breakpoint.extra-small {
+    padding: 0 0.75rem;
+  }
+}

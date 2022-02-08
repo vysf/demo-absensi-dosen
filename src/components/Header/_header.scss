@@ -1,0 +1,24 @@
+@use "../../scss/breakpoint";
+
+// // mode production
+// @import "../../scss/breakpoint";
+
+.header {
+  background-color: #ffffff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  a {
+    text-align: center;
+  }
+
+  @include breakpoint.small-screen {
+    height: 50px;
+    img {
+      width: 80%;
+    }
+  }
+}
